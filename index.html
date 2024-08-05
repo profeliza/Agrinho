@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtor Rural</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="image.png" alt="Frutas e Verduras">
+        <h1>Cadastro de Produtor Rural</h1>
+    </header>
+
+    <main>
+        <section id="cadastro-produtor">
+            <h2>Cadastro de Produtor</h2>
+            <form id="produtor-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="localizacao">Localização:</label>
+                <input type="text" id="localizacao" name="localizacao" required>
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" name="contato" required>
+
+                <button type="submit">Cadastrar Produtor</button>
+            </form>
+        </section>
+
+        <section id="cadastro-produto">
+            <h2>Cadastro de Produto</h2>
+            <form id="produto-form">
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" name="nome-produto" required>
+
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" required>
+
+                <label for="produtor-id">ID do Produtor:</label>
+                <input type="number" id="produtor-id" name="produtor-id" required>
+
+                <label for="imagem-produto">URL da Imagem do Produto:</label>
+                <input type="url" id="imagem-produto" name="imagem-produto" required>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+
+        <section id="cadastro-oportunidade">
+            <h2>Cadastro de Oportunidade</h2>
+            <form id="oportunidade-form">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="produto-id">ID do Produto:</label>
+                <input type="number" id="produto-id" name="produto-id" required>
+
+                <button type="submit">Cadastrar Oportunidade</button>
+            </form>
+        </section>
+
+        <section id="listagens">
+            <h2>Listagem de Produtores</h2>
+            <ul id="produtores-lista"></ul>
+
+            <h2>Listagem de Produtos</h2>
+            <ul id="produtos-lista"></ul>
+
+            <h2>Listagem de Oportunidades</h2>
+            <ul id="oportunidades-lista"></ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
